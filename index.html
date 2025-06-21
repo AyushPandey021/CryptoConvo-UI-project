@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <style>
+
+    .marquee-wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .marquee-content {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 25s linear infinite;
+    }
+
+    @keyframes marqueeScroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="main">
+<div class="nav flex justify-between items-center px-10 py-4 bg-white shadow-md">
+  <!-- Left: Logo -->
+  <div class="logo h-12 w-12">
+    <img class="h-full w-full object-contain" src="https://imgs.search.brave.com/9mLoakMGCyr9FULmppGi6JrjWin71qkMed0t1CxCIdM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nb2FpLmNvbS9v/c3MvaWNvbnMvMjAy/MS8xMi8wMi91OHRY/RDJWN3JybzZib2su/cG5n" alt="Logo">
+  </div>
+
+  <!-- Center: Navigation Links -->
+  <nav class="space-x-6 text-lg font-medium">
+    <a class="text-blue-500" href="#">Home</a>
+    <a class="text-gray-700 hover:text-blue-500" href="#">Events</a>
+    <a class="text-gray-700 hover:text-blue-500" href="#">Community</a>
+    <a class="text-gray-700 hover:text-blue-500" href="#">About</a>
+    <a class="text-gray-700 hover:text-blue-500" href="#">Shop</a>
+  </nav>
+
+  <!-- Right: Buttons -->
+  <div class="space-x-4">
+    <button class="px-5 py-2 rounded-xl border border-indigo-600 text-indigo-600 hover:bg-indigo-50 transition">Login</button>
+    <button class="px-5 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition">Get Started</button>
+  </div>
+</div>
+<div class="page-01">
+  <div class="blue px-2 bg-[#D7EAFD] text-xl w-110 text-center py-2 text-blue-700 items-center justify-between  ml-120  rounded-full "> 
+    Get insight into the World of Cryptocurrency
+  </div>
+
+  <h1  class="text-8xl  text-center">Your Friendly Guide to <br>
+    <span class=" opacity-90    bg-gradient-to-b from-black to-white text-transparent bg-clip-text ">
+    the Crypto World</span>
+  </h1>
+  <button class="bg-blue-600   text-white text-xl font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl active:translate-y-1 transition-all duration-200 items-center ml-150 mt-7">
+    Start Learning for Free →
+  </button>
+<!-- cards -->
+<div class="flex gap-6 justify-center items-center mt-10 px-4 flex-wrap">
+  <!-- Person Card -->
+  <div class="rounded-[40px] p-1 w-[250px] h-[500px] overflow-hidden shadow-xl transition-transform hover:scale-105">
+    <img src="https://img.freepik.com/free-photo/man-playing-video-game-with-virtual-reality-goggles_23-2148815664.jpg?ga=GA1.1.2145818474.1750502882&semt=ais_hybrid&w=740" 
+         alt="Person 1" 
+         class="rounded-[35px] w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" />
+  </div>
+
+  <!-- Repeat for other people -->
+  <div class=" rounded-[40px] p-1 w-[250px] h-[500px] overflow-hidden shadow-xl transition-transform hover:scale-105">
+    <img src="https://img.freepik.com/free-photo/portrait-young-woman-with-universe-projection-texture_23-2149581283.jpg?ga=GA1.1.2145818474.1750502882&semt=ais_hybrid&w=740" 
+         alt="Person 2" 
+         class="rounded-[35px] w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" />
+  </div>
+
+  <div class=" rounded-[40px] p-1 w-[250px] h-[500px] overflow-hidden shadow-xl transition-transform hover:scale-105">
+    <img src="https://img.freepik.com/free-photo/ai-generated-concept-human_23-2150688361.jpg?ga=GA1.1.2145818474.1750502882&semt=ais_hybrid&w=740" 
+         alt="Person 3" 
+         class="rounded-[35px] w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" />
+  </div>
+
+  <div class=" rounded-[40px] p-1 w-[250px] h-[500px] overflow-hidden shadow-xl transition-transform hover:scale-105">
+    <img src="https://img.freepik.com/free-photo/man-portrait-with-blue-lights-visual-effects_23-2149419469.jpg?ga=GA1.1.2145818474.1750502882&semt=ais_hybrid&w=740" 
+         alt="Person 4" 
+         class="rounded-[35px] w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" />
+  </div>
+</div>
+
+
+
+  <h2 class="text-center text-gray-500 text-lg mb-6 font-medium">Trusted by</h2>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-content gap-16">
+      <!-- Logo Set 1 -->
+      <img src="/images/coinbase.png" class="h-8" />
+      <img src="/images/crypto.png" class="h-8" />
+      <img src="/images/bitgate.png" class="h-8" />
+      <img src="/images/metamask.png" class="h-8" />
+      <img src="/images/binance.png" class="h-8" />
+      <img src="/images/bybit.png" class="h-8" />
+      <img src="/images/okx.png" class="h-8" />
+
+      <!-- Logo Set 2 (duplicate for seamless loop) -->
+      <img src="/images/coinbase.png" class="h-8" />
+      <img src="/images/crypto.png" class="h-8" />
+      <img src="/images/bitgate.png" class="h-8" />
+      <img src="/images/metamask.png" class="h-8" />
+      <img src="/images/binance.png" class="h-8" />
+      <img src="/images/bybit.png" class="h-8" />
+      <img src="/images/okx.png" class="h-8" />
+    </div>
+  </div>
+
+  
+</div>
+<div class="page-02">
+  <div class="blue  bg-[#D7EAFD] text-xl w-50 text-center py-2 text-blue-700 items-center justify-between ml-4   rounded-full "> 
+    ⏹️Why Choose us
+  </div>
+<div class=" flex justify-between m-2">
+  <h1 class="text-6xl mt-3">Why CoolCrytoConvo ?</h1>
+  <p class=" w-100 text-2xl"> Your Trusted platfrom to crypto community engoginment and reable ingints.</p>
+
+
+
+  
+</div>
+
+  <section class="py-12 bg-white text-gray-800">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-center mb-10">Why Choose Us?</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Card 1 -->
+      <div class=" rounded-xl p-6 shadow-md text-center">
+        <div class="text-3xl mb-3 text-blue-500">🤝</div>
+        <h3 class="font-semibold text-lg mb-2">Community-Driven</h3>
+        <p class="text-sm text-gray-600">Connect with a global network of crypto enthusiasts from beginner to expert, all supporting each other’s journey.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class=" rounded-xl p-6 shadow-md text-center">
+        <div class="text-3xl mb-3 text-blue-500">📚</div>
+        <h3 class="font-semibold text-lg mb-2">Learn at Your Pace</h3>
+        <p class="text-sm text-gray-600">Access curated resources, guides, and tutorials tailored to your knowledge level and specific interests.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="rounded-xl p-6 shadow-md text-center">
+        <div class="text-3xl mb-3 text-blue-500">✅</div>
+        <h3 class="font-semibold text-lg mb-2">Trusted Information</h3>
+        <p class="text-sm text-gray-600">Get reliable, fact-checked insights free from hype and FOMO, helping you make informed decisions.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class=" rounded-xl p-6 shadow-md text-center">
+        <div class="text-3xl mb-3 text-blue-500">💬</div>
+        <h3 class="font-semibold text-lg mb-2">Real Discussions</h3>
+        <p class="text-sm text-gray-600">Engage in meaningful conversations about projects, technology, and trends with respectful, knowledgeable peers.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+  
+<div class="number flex justify-around bg-blue-200 m-3 border-2 px-2 py-5 rounded-full border-blue-300">
+  <h1 class="text-5xl font-semibold">500k+ <br> <span class=" text-black text-xl">Community Members</span>
+
+  </h1>
+  <h1 class="text-5xl font-semibold">200+ <br> <span class=" text-black text-xl">Educational Resources</span> </h1>
+  <h1 class="text-5xl font-semibold">30+ <br> <span class=" text-black text-xl">Global Events</span></h1>
+  <h1 class="text-5xl font-semibold">24/7 <br> <span class=" text-black text-xl">Community Support</span></h1>
+
+</div>
+  <div class="blue  bg-[#D7EAFD] text-xl w-50 text-center py-2 text-blue-700 items-center justify-between ml-4   rounded-full "> 
+    ⏹️Getting Started
+  </div>
+<div class=" flex justify-between m-2">
+  <h1 class="text-6xl mt-3">Why CoolCrytoConvo ?</h1>
+  <p class=" w-100 text-2xl"> Your Trusted platfrom to crypto community engoginment and reable ingints.</p>
+
+
+
+  
+</div>
+<div class="flex flex-col lg:flex-row items-center justify-center gap-10 px-6 py-12 ">
+  
+  <!-- Left Side Tabs -->
+  <div class="flex flex-col gap-4 w-full max-w-md">
+    
+    <!-- Active Tab -->
+    <div class="bg-blue-600 text-white p-5 rounded-xl shadow">
+      <h3 class="text-lg font-semibold mb-1">Create Your Account</h3>
+      <p class="text-sm">Sign up in seconds with your email or social accounts. Customize your profile to match your crypto interests and experience level.</p>
+    </div>
+
+    <!-- Inactive Tabs -->
+    <div class="bg-gray-100 hover:bg-gray-200 transition p-4 rounded-xl text-gray-900 font-medium cursor-pointer">
+      Explore Learning Resources
+    </div>
+    <div class="bg-gray-100 hover:bg-gray-200 transition p-4 rounded-xl text-gray-900 font-medium cursor-pointer">
+      Join the Conversation
+    </div>
+    <div class="bg-gray-100 hover:bg-gray-200 transition p-4 rounded-xl text-gray-900 font-medium cursor-pointer">
+      Grow Your Knowledge
+    </div>
+  </div>
+
+  <!-- Right Side Image -->
+  <div class="max-w-md w-full">
+    <img src="https://img.freepik.com/free-vector/vector-3d-abstract-human-head-made-black-white-stripes-monochrome-ripple-surface-illustration-head-profile-sliced-minimalistic-design-layout-business-presentations-flyers-posters_1217-6441.jpg?ga=GA1.1.2145818474.1750502882&semt=ais_hybrid&w=740" alt="Person working on laptop" class="rounded-2xl w-full object-cover shadow-md" />
+  </div>
+
+</div>
+  <div class="blue  bg-[#D7EAFD] text-xl w-50 text-center py-2 text-blue-700 items-center justify-between ml-4   rounded-full "> 
+    ⏹️Getting Started
+  </div>
+<div class=" flex justify-between m-2">
+  <h1 class="text-6xl mt-3">Latest Update  ?</h1>
+</div>
+
+    </div>
+    <!-- more cards -->
+     <div class="min-h-screen  flex items-center justify-center px-2 py-2">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl w-full">
+    
+    <!-- Card Start -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+      <img src="https://your-image-url.jpg" alt="News" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-800">Bitcoin Adoption Soars in Emerging Markets</h2>
+        <div class="flex items-center mt-4">
+          <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/300" alt="Emma">
+          <div class="ml-3">
+            <p class="text-sm font-medium text-gray-700">Emma Rodriguez</p>
+            <p class="text-xs text-gray-500">4 min read</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <a href="#" class="text-blue-600 font-medium text-sm hover:underline inline-flex items-center">
+            Read More <span class="ml-1">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+      <img src="https://your-image-url.jpg" alt="News" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-800">Bitcoin Adoption Soars in Emerging Markets</h2>
+        <div class="flex items-center mt-4">
+          <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/300" alt="Emma">
+          <div class="ml-3">
+            <p class="text-sm font-medium text-gray-700">Emma Rodriguez</p>
+            <p class="text-xs text-gray-500">4 min read</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <a href="#" class="text-blue-600 font-medium text-sm hover:underline inline-flex items-center">
+            Read More <span class="ml-1">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+      <img src="https://your-image-url.jpg" alt="News" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-800">Bitcoin Adoption Soars in Emerging Markets</h2>
+        <div class="flex items-center mt-4">
+          <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/300" alt="Emma">
+          <div class="ml-3">
+            <p class="text-sm font-medium text-gray-700">Emma Rodriguez</p>
+            <p class="text-xs text-gray-500">4 min read</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <a href="#" class="text-blue-600 font-medium text-sm hover:underline inline-flex items-center">
+            Read More <span class="ml-1">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Card End -->
+
+    <!-- Copy & change text/image to add more cards -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+      <img src="https://your-image-url.jpg" alt="News" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-800">Ethereum Completes Major Network Upgrade</h2>
+        <div class="flex items-center mt-4">
+          <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/300" alt="Emma">
+          <div class="ml-3">
+            <p class="text-sm font-medium text-gray-700">Emma Rodriguez</p>
+            <p class="text-xs text-gray-500">4 min read</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <a href="#" class="text-blue-600 font-medium text-sm hover:underline inline-flex items-center">
+            Read More <span class="ml-1">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more cards similarly -->
+
+  </div>
+</div>
+<div class="page-03">
+   <div class="blue  bg-[#D7EAFD] text-xl w-50 text-center py-2 text-blue-700 items-center justify-between ml-4   rounded-full "> 
+    ⏹️Getting Started
+  </div>
+<div class=" flex justify-between m-2">
+  <h1 class="text-6xl mt-3">A ButterflyTimeline </h1>
+  <p class=" w-100 text-2xl"> Discover the milestone in the history of Cryptocurrency .</p>
+
+
+
+  
+</div>
+</div>
+
+  </div>  
+</body>
+</html>
