@@ -1,47 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-      .marquee-wrapper {
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-      }
-
-      .marquee-content {
-        display: flex;
-        width: max-content;
-        animation: marqueeScroll 25s linear infinite;
-      }
-
-      @keyframes marqueeScroll {
-        0% {
-          transform: translateX(0%);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-      .timeline-line {
-        top: 2.5rem;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background: linear-gradient(to right, #2563eb, #2563eb);
-        z-index: 0;
-      }
-      .curve-line {
-        position: absolute;
-        top: 2.5rem;
-        left: 0;
-        width: 100%;
-        height: 120px;
-        z-index: 0;
-      }
+    
       @keyframes borderRGB {
         0% {
           border-color: #ff0000;
@@ -84,9 +50,7 @@
   </head>
   <body>
     <div class="main">
-      <div
-        class="nav flex justify-between items-center px-10 py-4 bg-white "
-      >
+      <div class="nav flex justify-between items-center px-10 py-4 bg-white">
         <!-- Left: Logo -->
         <div class="logo h-12 w-12">
           <img
@@ -106,18 +70,20 @@
         </nav>
 
         <!-- Right: Buttons -->
-       <div class="space-x-4">
-  <!-- Custom White-on-Black Theme Button -->
-  <button class="px-6 py-2 rounded-xl bg-black text-white relative transition-all duration-300 hover:brightness-110 shadow-[inset_0_2px_0_0_white,0_4px_6px_rgba(0,0,0,0.5)]">
-    Login
-  </button>
+        <div class="space-x-4">
+          <!-- Custom White-on-Black Theme Button -->
+          <button
+            class="px-6 py-2 rounded-xl bg-black text-white relative transition-all duration-300 hover:brightness-110 shadow-[inset_0_2px_0_0_white,0_4px_6px_rgba(0,0,0,0.5)]"
+          >
+            Login
+          </button>
 
-  <!-- Regular Get Started Button -->
-  <button class="px-6 py-2 rounded-xl bg-black text-white hover:bg-gray-800 -110 shadow-[inset_0_2px_0_0_white,0_4px_6px_rgba(0,0,0,0.5)]">
-    Get Started
-  </button>
-</div>
-
+          <button
+            class="px-6 py-2 rounded-xl bg-black text-white hover:bg-gray-800 -110 shadow-[inset_0_2px_0_0_white,0_4px_6px_rgba(0,0,0,0.5)]"
+          >
+            Get Started
+          </button>
+        </div>
       </div>
       <div class="page-01">
         <div
@@ -189,28 +155,97 @@
         <h2 class="text-center text-gray-500 text-lg mb-6 font-medium">
           Trusted by
         </h2>
+        <!-- text  -->
+  <div class="marquee-ap">
+      <ul class="marquee-content-item">
+        <li>
+          <i class="fab fa-github"
+            ><img
+              src="https://imgs.search.brave.com/jHcEA3APQOLGDvuqpzK7w3vp8MQuSrbeArZ8HQWPWZs/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWhpbmR1c3Rhbi11/bmlsZXZlci1sb2dv/LWljb24tZG93bmxv/YWQtaW4tc3ZnLXBu/Zy1naWYtZmlsZS1m/b3JtYXRzLS1jb21w/YW55LWluZGlhbi1j/b21wYW5pZXMtcGFj/ay1sb2dvcy1pY29u/cy0yMjQ5MTYwLnBu/Zz9mPXdlYnAmdz0x/Mjg"
+              alt=""
+          /></i>
+        </li>
+        <li>
+          <i class="fab fa-codepen"
+            ><img
+              src="https://imgs.search.brave.com/1LXfPTKiZZZa82K5EASzx03mvR3BpRjGOaNxe8vLmoU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzYxLzIvbGl0ZXJh/LWxvZ28tcG5nX3Nl/ZWtsb2dvLTYxMzU4/Ny5wbmc_dj0xOTYx/MzczMzQ5NjIyODI5/MDY0"
+              alt=""
+          /></i>
+        </li>
+        <li>
+          <i class="fab fa-free-code-camp"
+            ><img
+              src="https://imgs.search.brave.com/XEJ1Lq5tkvZudQ-yq50qOWVDBuRYGqROcATF2qgt6qY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzYyLzIvcGV0Y3Vi/ZS11a3JhaW5lLWxv/Z28tcG5nX3NlZWts/b2dvLTYyMTc3NS5w/bmc"
+              alt=""
+          /></i>
+        </li>
+        <li>
+          <i class="fab fa-dev"></i
+          ><img
+            src="https://imgs.search.brave.com/n7U0MaHNXdV-tiiHf2PiBHBCRLqFDngCTfJ9g-q--vk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzQxLzIvemlubGkt/bG9nby1wbmdfc2Vl/a2xvZ28tNDExMzU0/LnBuZw"
+            alt=""
+          />
+        </li>
+        <li>
+          <i class="fab fa-react"
+            ><img
+              src="https://imgs.search.brave.com/n4ESm_93mk5LSIWWZHHvG3Drm68QZP3zH1jc1no1vEo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzM5LzIvYXJhbWNv/LXNlcnZpY2VzLWNv/bXBhbnktbG9nby1w/bmdfc2Vla2xvZ28t/Mzk1NzA2LnBuZw"
+              alt=""
+          /></i>
+        </li>
+        <li>
+          <i class="fab fa-vuejs"
+            ><img
+              src="https://imgs.search.brave.com/Qs_nlBVgTV3hEW8hNgOHq0MhG-4KvA3mD2efpTKX2Ac/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvY2xl/YW5pbmctY29tcGFu/eS1sb2dvLWRlc2ln/bi12bWNoMGZmMDJu/Y3hlNzdjLTIucG5n"
+              alt=""
+          /></i>
+        </li>
+        <li>
+          <i class="fab fa-angular"></i
+          ><img
+            src="https://imgs.search.brave.com/0IwxSAJDjCavh1Lj-_8HbdptEUGzrqtaRlx8dmz8pHQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzEyLzIvc2F1ZGkt/ZWxlY3RyaWNpdHkt/Y29tcGFueS1sb2dv/LXBuZ19zZWVrbG9n/by0xMjI5MzEucG5n"
+            alt=""
+          />
+        </li>
+        <li>
+          <i class="fab fa-node"></i
+          ><img
+            src="https://imgs.search.brave.com/GaBn9ZL-6PXT8aL3BVyWlXI2b3-KtqxxszKvROTOqIU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L2NvbXBhbnktbG9n/by1wbmcvZmlsZS1x/dWVjaHVhLWNvbXBh/bnktbG9nby13aWtp/bWVkaWEtY29tbW9u/cy0xOC5wbmc"
+            alt=""
+          />
+        </li>
+        <li>
+          <i class="fab fa-wordpress"
+            ><img
+              src="https://imgs.search.brave.com/z1GPUeGw8lKxycb0MkKjVR6xCND_6nZPYPTrqayMnvQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzE5LzIvbHVrb2ls/LW9pbC1jb21wYW55/LWxvZ28tcG5nX3Nl/ZWtsb2dvLTE5NzIx/NC5wbmc"
+              alt=""
+          /></i>
+        </li>
+        <li>
+          <i class="fab fa-aws"></i
+          ><img
+            src="https://imgs.search.brave.com/-XJcxadc5GlXnQjUH2SS906okFrtF6WojiXP-J2O_jc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzE5LzIvdHZzLW1v/dG9yLWNvbXBhbnkt/bG9nby1wbmdfc2Vl/a2xvZ28tMTk4NzI3/LnBuZw"
+            alt=""
+          />
+        </li>
+        <li>
+          <i class="fab fa-docker"></i
+          ><img
+            src="https://imgs.search.brave.com/XZ4i76xX2CGPc731ykPuEQfN8-I8tBdXHARrrbzSJJk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzMwLzIva3lvY2Vy/YS1lbGVjdHJvbmlj/cy1jb21wYW55LWxv/Z28tcG5nX3NlZWts/b2dvLTMwNDQ3Ni5w/bmc"
+            alt=""
+          />
+        </li>
+        <li>
+          <i class="fab fa-android"></i
+          ><img
+            src="https://imgs.search.brave.com/2iL5qLf9c5gWb0ujHg9bZbBayUO1_jkjEmYtxu0lSIo/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LW1haGluZHJhLWxv/Z28taWNvbi1kb3du/bG9hZC1pbi1zdmct/cG5nLWdpZi1maWxl/LWZvcm1hdHMtLXJp/c2UtYXV0b21vYmls/ZS1icmFuZC1jb21w/YW55LWluZGlhbi1j/b21wYW5pZXMtcGFj/ay1sb2dvcy1pY29u/cy0yMjQ5MTQ4LnBu/Zz9mPXdlYnAmdz0x/Mjg"
+            alt=""
+          />
+        </li>
+      </ul>
+    </div>
 
-        <div class="marquee-wrapper">
-          <div class="marquee-content gap-16">
-            <!-- Logo Set 1 -->
-            <img src="/images/coinbase.png" class="h-8" />
-            <img src="/images/crypto.png" class="h-8" />
-            <img src="/images/bitgate.png" class="h-8" />
-            <img src="/images/metamask.png" class="h-8" />
-            <img src="/images/binance.png" class="h-8" />
-            <img src="/images/bybit.png" class="h-8" />
-            <img src="/images/okx.png" class="h-8" />
-
-            <!-- Logo Set 2 (duplicate for seamless loop) -->
-            <img src="/images/coinbase.png" class="h-8" />
-            <img src="/images/crypto.png" class="h-8" />
-            <img src="/images/bitgate.png" class="h-8" />
-            <img src="/images/metamask.png" class="h-8" />
-            <img src="/images/binance.png" class="h-8" />
-            <img src="/images/bybit.png" class="h-8" />
-            <img src="/images/okx.png" class="h-8" />
-          </div>
-        </div>
+     
       </div>
       <div class="page-02">
         <div
@@ -1057,5 +1092,6 @@
         </footer>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
